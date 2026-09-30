@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menstrual Hygiene Guidelines - WOmenCare</title>
+  <meta name="description" content="CDC-aligned menstrual hygiene practices: hand washing, product change frequencies, sanitary disposal, and tampon TSS safety.">
+  
+  <!-- Favicon & Brand Icons -->
+  <link rel="icon" type="image/png" href="assets/images/Firefly.png">
+  <link rel="apple-touch-icon" href="assets/images/Firefly.png">
+  <meta property="og:title" content="Menstrual Hygiene Guidelines - WOmenCare">
+  <meta property="og:description" content="CDC-aligned menstrual hygiene practices: hand washing, product change frequencies, and sanitary disposal.">
+  <meta property="og:image" content="assets/images/Firefly.png">
+  <meta property="og:type" content="website">
+
+  <!-- Preconnect Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#FFF6F8',
+              100: '#FCE4EB',
+              200: '#F5DCE4',
+              300: '#F393AF',
+              400: '#EB7A9A',
+              500: '#DD5C82',
+              600: '#C1436A',
+              900: '#3B2531',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-[#FFF6F8] text-[#3B2531] min-h-screen flex flex-col justify-between">
+
+  <!-- Site Header (Managed by nav-footer.js) -->
+  <header id="site-header"></header>
+
+  <!-- Main Content Container for Seamless Page Switching -->
+  <div id="app-content-container" class="w-full flex-grow">
+
+  <!-- Hero Banner -->
+  <section class="py-12 bg-gradient-to-b from-[#FFF6F8] via-[#FFEEF3] to-[#FFF6F8] border-b border-[#F5DCE4]">
+    <div class="max-w-4xl mx-auto px-4 text-center space-y-3">
+      <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-bold bg-teal-100 text-teal-700">
+        <span data-icon="bath" data-size="14"></span> CDC Guidelines Aligned
+      </span>
+      <h1 class="text-4xl font-serif font-bold text-[#3B2531]">Menstrual Hygiene Guidelines</h1>
+      <p class="text-sm sm:text-base text-[#5A3C4A] max-w-xl mx-auto">
+        Essential hygiene recommendations from leading health authorities to prevent urogenital infections, odor, and irritation.
+      </p>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+    
+    <!-- 3 Core Hygiene Principles -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Hand Washing -->
+      <div class="wc-card p-6 space-y-4">
+        <div class="w-12 h-12 rounded-xl bg-teal-100 text-teal-600 flex items-center justify-center">
+          <span data-icon="bath" data-size="24" data-color="#0D9488"></span>
+        </div>
+        <h3 class="font-serif font-bold text-lg text-[#3B2531]">Hand Washing Protocol</h3>
+        <p class="text-xs text-[#5A3C4A] leading-relaxed">
+          Wash hands with soap and running water before and immediately after handling any menstrual products, and after using the restroom.
+        </p>
+        <ul class="text-xs text-[#5A3C4A] space-y-1.5 list-disc list-inside">
+          <li>Scrub palms, fingers, and under nails for 20 seconds</li>
+          <li>Dry hands completely with a clean towel</li>
+          <li>Use 60%+ alcohol hand sanitizer if water is unavailable</li>
+        </ul>
+      </div>
+
+      <!-- Frequency -->
+      <div class="wc-card p-6 space-y-4">
+        <div class="w-12 h-12 rounded-xl bg-pink-100 text-pink-600 flex items-center justify-center">
+          <span data-icon="clock" data-size="24" data-color="#DD5C82"></span>
+        </div>
+        <h3 class="font-serif font-bold text-lg text-[#3B2531]">Changing Frequency</h3>
+        <p class="text-xs text-[#5A3C4A] leading-relaxed">
+          Changing products consistently prevents bacterial growth, contact dermatitis, and foul odors from trapped moisture.
+        </p>
+        <ul class="text-xs text-[#5A3C4A] space-y-1.5 list-disc list-inside">
+          <li><strong>Pads:</strong> Every 4 to 6 hours</li>
+          <li><strong>Tampons:</strong> Every 4 to 8 hours</li>
+          <li><strong>Menstrual Cups:</strong> Every 8 to 12 hours</li>
+          <li><strong>Cloth Pads:</strong> Same frequency as disposable pads</li>
+        </ul>
+      </div>
+
+      <!-- Disposal -->
+      <div class="wc-card p-6 space-y-4">
+        <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center">
+          <span data-icon="trash" data-size="24" data-color="#E7A94C"></span>
+        </div>
+        <h3 class="font-serif font-bold text-lg text-[#3B2531]">Sanitary Disposal</h3>
+        <p class="text-xs text-[#5A3C4A] leading-relaxed">
+          Dispose of products safely to protect communal plumbing, public sanitation, and local environmental health.
+        </p>
+        <ul class="text-xs text-[#5A3C4A] space-y-1.5 list-disc list-inside">
+          <li>Wrap used products in toilet tissue or original wrapper</li>
+          <li>Place in dedicated sanitary bins</li>
+          <li><strong>Never flush</strong> pads, tampons, or wet wipes down toilets</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Personal Hygiene Best Practices -->
+    <div class="wc-card p-8 bg-white space-y-6">
+      <div class="max-w-2xl">
+        <h2 class="text-2xl font-serif font-bold text-[#3B2531]">Daily Personal Hygiene Routine</h2>
+        <p class="text-xs sm:text-sm text-[#8A6575] mt-1">Simple, gentle hygiene habits for comfort and natural balance.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-2">
+        <div class="space-y-2">
+          <div class="w-10 h-10 rounded-lg bg-pink-100 text-pink-600 flex items-center justify-center">
+            <span data-icon="droplets" data-size="20" data-color="#DD5C82"></span>
+          </div>
+          <h4 class="font-bold text-sm text-[#3B2531]">Daily Showering</h4>
+          <p class="text-xs text-[#5A3C4A]">Bathing daily washes away dried blood, keeps intimate skin refreshed, and relaxes cramping muscles.</p>
+        </div>
+
+        <div class="space-y-2">
+          <div class="w-10 h-10 rounded-lg bg-teal-100 text-teal-600 flex items-center justify-center">
+            <span data-icon="shield" data-size="20" data-color="#0D9488"></span>
+          </div>
+          <h4 class="font-bold text-sm text-[#3B2531]">Front to Back Wiping</h4>
+          <p class="text-xs text-[#5A3C4A]">Always wipe from front to back after using the toilet to avoid transferring bacteria from the bowel to the urethra.</p>
+        </div>
+
+        <div class="space-y-2">
+          <div class="w-10 h-10 rounded-lg bg-purple-100 text-purple-600 flex items-center justify-center">
+            <span data-icon="heart" data-size="20" data-color="#7A5C82"></span>
+          </div>
+          <h4 class="font-bold text-sm text-[#3B2531]">Cotton Underwear</h4>
+          <p class="text-xs text-[#5A3C4A]">Wear breathable, 100% cotton underwear. Avoid tight synthetic thongs that trap heat and moisture.</p>
+        </div>
+
+        <div class="space-y-2">
+          <div class="w-10 h-10 rounded-lg bg-rose-100 text-rose-600 flex items-center justify-center">
+            <span data-icon="sparkles" data-size="20" data-color="#C1436A"></span>
+          </div>
+          <h4 class="font-bold text-sm text-[#3B2531]">No Harsh Scents</h4>
+          <p class="text-xs text-[#5A3C4A]">Avoid scented pads or genital deodorants. The vagina is self-cleaning; perfumes disrupt natural lactobacilli flora.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tampon Safety & TSS Guidelines -->
+    <div class="wc-card p-6 sm:p-8 border-red-200 bg-red-50/40 space-y-4">
+      <div class="flex items-center gap-3 text-red-700">
+        <span data-icon="alertTriangle" data-size="24" data-color="#DC2626"></span>
+        <h3 class="font-serif font-bold text-xl text-[#3B2531]">Tampon Safety & Toxic Shock Syndrome (TSS)</h3>
+      </div>
+      <p class="text-xs sm:text-sm text-[#5A3C4A] leading-relaxed">
+        Toxic Shock Syndrome is a rare but life-threatening bacterial condition caused by <em>Staphylococcus aureus</em>. Following these strict guidelines minimizes your risk:
+      </p>
+
+      <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs text-[#3B2531] font-semibold pt-2">
+        <li class="flex items-start gap-2">
+          <span data-icon="check" data-size="14" data-color="#059669" class="mt-0.5"></span>
+          Always use the lowest absorbency necessary for your flow rate.
+        </li>
+        <li class="flex items-start gap-2">
+          <span data-icon="check" data-size="14" data-color="#059669" class="mt-0.5"></span>
+          Never wear a single tampon for longer than 8 hours under any circumstances.
+        </li>
+        <li class="flex items-start gap-2">
+          <span data-icon="check" data-size="14" data-color="#059669" class="mt-0.5"></span>
+          Alternate tampons with sanitary pads, particularly overnight while sleeping.
+        </li>
+        <li class="flex items-start gap-2">
+          <span data-icon="check" data-size="14" data-color="#059669" class="mt-0.5"></span>
+          If you develop sudden high fever, rash, dizziness, or vomiting, remove the tampon and seek emergency care.
+        </li>
+      </ul>
+    </div>
+
+  </main>
+  </div>
+
+  <!-- Site-Wide Comprehensive Footer (Managed by nav-footer.js) -->
+  <footer id="site-footer"></footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/icons.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/tracker-engine.js" defer></script>
+  <script src="assets/js/tracker-ui.js" defer></script>
+  <script src="assets/js/nav-footer.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

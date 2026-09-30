@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WOmenCare - Smart Period Tracker & Women's Health Portal</title>
+  <meta name="description" content="Track your menstrual cycle, predict ovulation and fertile windows, monitor symptoms, and get evidence-based health guidance with WOmenCare.">
+  
+  <!-- Favicon & Brand Icons -->
+  <link rel="icon" type="image/png" href="assets/images/Firefly.png">
+  <link rel="apple-touch-icon" href="assets/images/Firefly.png">
+  <meta property="og:title" content="WOmenCare - Women's Health & Smart Cycle Tracker">
+  <meta property="og:description" content="Track your menstrual cycle, predict ovulation, monitor symptoms, and explore holistic care with WOmenCare.">
+  <meta property="og:image" content="assets/images/Firefly.png">
+  <meta property="og:type" content="website">
+
+  <!-- Preconnect Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#FFF6F8',
+              100: '#FCE4EB',
+              200: '#F5DCE4',
+              300: '#F393AF',
+              400: '#EB7A9A',
+              500: '#DD5C82',
+              600: '#C1436A',
+              900: '#3B2531',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-[#FFF6F8] text-[#3B2531] min-h-screen flex flex-col justify-between">
+
+  <!-- Site Header (Managed by nav-footer.js) -->
+  <header id="site-header"></header>
+
+  <!-- Main Content Container for Seamless Page Switching -->
+  <div id="app-content-container" class="w-full flex-grow">
+
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden pt-12 pb-16 lg:pt-20 lg:pb-24 bg-gradient-to-b from-[#FFF6F8] via-[#FFEEF3] to-[#FFF6F8]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold bg-pink-100/90 text-pink-700 border border-pink-200">
+            <span data-icon="sparkles" data-size="14" data-color="#C1436A"></span>
+            Empowering Women's Health & Wellness
+          </div>
+          <h1 class="text-3xl sm:text-5xl lg:text-[52px] xl:text-6xl font-serif font-bold text-[#3B2531] tracking-tight leading-[1.15]">
+            Welcome to <span class="text-pink-600 inline-block whitespace-nowrap">WOmenCare</span>
+          </h1>
+          <p class="text-base sm:text-lg text-[#5A3C4A] max-w-2xl mx-auto lg:mx-0 font-sans leading-relaxed">
+            Your trusted, private resource for menstrual health, intelligent cycle prediction, symptom awareness, and daily wellbeing.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+            <a href="tracker.html" class="w-full sm:w-auto wc-btn-primary py-3.5 px-8 text-base">
+              <span data-icon="activity" data-size="18" data-color="#ffffff"></span>
+              Start Period Tracker
+            </a>
+            <a href="period-tips.html" class="w-full sm:w-auto wc-btn-ghost py-3.5 px-8 text-base">
+              <span data-icon="bookOpen" data-size="18" data-color="#5A3C4A"></span>
+              Learn Health Tips
+            </a>
+          </div>
+
+          <div class="pt-6 grid grid-cols-3 gap-4 border-t border-[#F5DCE4] max-w-lg mx-auto lg:mx-0">
+            <div>
+              <div class="text-2xl font-bold font-serif text-pink-700">100%</div>
+              <div class="text-xs text-[#8A6575] font-semibold">Private & Safe</div>
+            </div>
+            <div>
+              <div class="text-2xl font-bold font-serif text-pink-700">Instant</div>
+              <div class="text-xs text-[#8A6575] font-semibold">Cycle Forecasts</div>
+            </div>
+            <div>
+              <div class="text-2xl font-bold font-serif text-pink-700">Holistic</div>
+              <div class="text-xs text-[#8A6575] font-semibold">Ayurvedic Comfort</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-full max-w-md">
+            <div class="wc-card overflow-hidden shadow-2xl p-2 bg-white">
+              <img src="assets/images/hero-banner.jpg" alt="Women supporting each other in health and wellness" class="w-full h-80 object-cover rounded-xl" loading="lazy">
+              <div class="p-4 bg-white text-center">
+                <span class="text-xs font-bold text-pink-600 uppercase tracking-wider">Compassionate Care</span>
+                <p class="text-sm font-serif font-bold text-[#3B2531] mt-0.5">Track your cycle and plan your comfort with confidence</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Understanding Menstruation Section (With Video) -->
+  <section class="py-16 bg-white border-y border-[#F5DCE4]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-3xl font-bold font-serif text-[#3B2531]">Understanding Menstruation</h2>
+        <div class="w-16 h-1 bg-pink-500 mx-auto mt-3 mb-4 rounded-full"></div>
+        <p class="text-sm text-[#8A6575]">A natural biological cycle experienced by millions around the world.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-6 space-y-4 text-sm text-[#5A3C4A] leading-relaxed">
+          <p>
+            <strong class="text-[#3B2531] text-base">Introduction:</strong> The purpose of this project is to provide reliable, medically aligned information and practical support during menstruation, focusing on hygiene, nutrition, and comforting lifestyle remedies.
+          </p>
+          <p>
+            WOmenCare consists of user-friendly sections providing both physical and emotional health guidance. This platform bridges modern technology with holistic care to make menstrual awareness accessible to all.
+          </p>
+          <p>
+            <strong class="text-[#3B2531]">Menstruation (a period)</strong> is the monthly shedding of the uterine lining when pregnancy does not occur. Good hygiene prevents infections, reduces odor, and supports maximum comfort throughout your monthly rhythm.
+          </p>
+
+          <div class="pt-2">
+            <a href="period-tips.html" class="inline-flex items-center gap-2 font-bold text-pink-700 hover:text-pink-800 text-sm">
+              Read Complete Period Care Guidelines
+              <span data-icon="arrowRight" data-size="16"></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="wc-card overflow-hidden shadow-xl aspect-video rounded-2xl bg-black">
+            <iframe class="w-full h-full" src="https://www.youtube.com/embed/42WIByexiXc" title="Understanding Periods - Medical Animation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comprehensive Menstrual Health Education Grid -->
+  <section class="py-16 bg-[#FFF6F8]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-3xl font-bold font-serif text-[#3B2531]">Comprehensive Menstrual Health Education</h2>
+        <div class="w-16 h-1 bg-pink-500 mx-auto mt-3 mb-4 rounded-full"></div>
+        <p class="text-sm text-[#8A6575]">Explore evidence-based guides designed to empower your daily routine.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Card 1 -->
+        <a href="period-tips.html" class="wc-card wc-card-hover p-6 block text-left group">
+          <div class="w-14 h-14 rounded-2xl bg-pink-100 flex items-center justify-center text-pink-600 mb-5 group-hover:scale-110 transition-transform">
+            <span data-icon="droplet" data-size="28" data-color="#DD5C82"></span>
+          </div>
+          <h3 class="text-lg font-bold font-serif text-[#3B2531] mb-2 group-hover:text-pink-600 transition-colors">Period Care Tips</h3>
+          <p class="text-xs text-[#5A3C4A] leading-relaxed mb-4">Learn proper menstrual hygiene practices, cramp relief, and cycle tracking.</p>
+          <span class="text-xs font-bold text-pink-600 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+            Learn More <span data-icon="arrowRight" data-size="14"></span>
+          </span>
+        </a>
+
+        <!-- Card 2 -->
+        <a href="nutrition.html" class="wc-card wc-card-hover p-6 block text-left group">
+          <div class="w-14 h-14 rounded-2xl bg-rose-100 flex items-center justify-center text-rose-600 mb-5 group-hover:scale-110 transition-transform">
+            <span data-icon="apple" data-size="28" data-color="#C1436A"></span>
+          </div>
+          <h3 class="text-lg font-bold font-serif text-[#3B2531] mb-2 group-hover:text-rose-600 transition-colors">Food & Nutrition</h3>
+          <p class="text-xs text-[#5A3C4A] leading-relaxed mb-4">Discover iron-rich foods, magnesium sources, and foods that reduce bloating.</p>
+          <span class="text-xs font-bold text-pink-600 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+            Learn More <span data-icon="arrowRight" data-size="14"></span>
+          </span>
+        </a>
+
+        <!-- Card 3 -->
+        <a href="mental-wellness.html" class="wc-card wc-card-hover p-6 block text-left group">
+          <div class="w-14 h-14 rounded-2xl bg-purple-100 flex items-center justify-center text-purple-600 mb-5 group-hover:scale-110 transition-transform">
+            <span data-icon="heart" data-size="28" data-color="#7A5C82"></span>
+          </div>
+          <h3 class="text-lg font-bold font-serif text-[#3B2531] mb-2 group-hover:text-purple-600 transition-colors">Mental Wellness</h3>
+          <p class="text-xs text-[#5A3C4A] leading-relaxed mb-4">Understand hormonal shifts, PMS, PMDD, and practice soothing yoga stretches.</p>
+          <span class="text-xs font-bold text-pink-600 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+            Learn More <span data-icon="arrowRight" data-size="14"></span>
+          </span>
+        </a>
+
+        <!-- Card 4 -->
+        <a href="essentials.html" class="wc-card wc-card-hover p-6 block text-left group">
+          <div class="w-14 h-14 rounded-2xl bg-amber-100 flex items-center justify-center text-amber-600 mb-5 group-hover:scale-110 transition-transform">
+            <span data-icon="package" data-size="28" data-color="#E7A94C"></span>
+          </div>
+          <h3 class="text-lg font-bold font-serif text-[#3B2531] mb-2 group-hover:text-amber-600 transition-colors">Product Essentials</h3>
+          <p class="text-xs text-[#5A3C4A] leading-relaxed mb-4">Explore cups, pads, tampons, and reusable essentials with direct product links.</p>
+          <span class="text-xs font-bold text-pink-600 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+            Learn More <span data-icon="arrowRight" data-size="14"></span>
+          </span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Health Tips Grid -->
+  <section class="py-16 bg-white border-t border-[#F5DCE4]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-3xl font-bold font-serif text-[#3B2531]">Quick Health Tips</h2>
+        <div class="w-16 h-1 bg-pink-500 mx-auto mt-3 mb-4 rounded-full"></div>
+        <p class="text-sm text-[#8A6575]">Simple daily habits that make a noticeable difference.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="wc-card p-6 text-center space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mx-auto">
+            <span data-icon="droplets" data-size="24" data-color="#2563EB"></span>
+          </div>
+          <h4 class="font-bold text-sm text-[#3B2531]">Stay Hydrated</h4>
+          <p class="text-xs text-[#5A3C4A]">Drink at least 2 liters of water daily to reduce fluid retention, headaches, and fatigue.</p>
+        </div>
+
+        <div class="wc-card p-6 text-center space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center mx-auto">
+            <span data-icon="bath" data-size="24" data-color="#0D9488"></span>
+          </div>
+          <h4 class="font-bold text-sm text-[#3B2531]">Practice Good Hygiene</h4>
+          <p class="text-xs text-[#5A3C4A]">Change pads every 4-6 hours and wash hands thoroughly before and after handling products.</p>
+        </div>
+
+        <div class="wc-card p-6 text-center space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-pink-50 text-pink-600 flex items-center justify-center mx-auto">
+            <span data-icon="heart" data-size="24" data-color="#DD5C82"></span>
+          </div>
+          <h4 class="font-bold text-sm text-[#3B2531]">Listen to Your Body</h4>
+          <p class="text-xs text-[#5A3C4A]">Rest when fatigued, use a warm compress for cramps, and avoid pushing through severe pain.</p>
+        </div>
+
+        <div class="wc-card p-6 text-center space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mx-auto">
+            <span data-icon="apple" data-size="24" data-color="#059669"></span>
+          </div>
+          <h4 class="font-bold text-sm text-[#3B2531]">Eat Balanced Meals</h4>
+          <p class="text-xs text-[#5A3C4A]">Incorporate spinach, lentils, seeds, and leafy greens to replenish iron and magnesium.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Educational Video Gallery -->
+  <section class="py-16 bg-[#FFF6F8] border-t border-[#F5DCE4]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-3xl font-bold font-serif text-[#3B2531]">Educational Video Library</h2>
+        <div class="w-16 h-1 bg-pink-500 mx-auto mt-3 mb-4 rounded-full"></div>
+        <p class="text-sm text-[#8A6575]">Expert video guidance on menstrual cycle health and hygiene.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="wc-card overflow-hidden shadow-lg p-3 bg-white">
+          <div class="aspect-video rounded-xl overflow-hidden bg-black mb-4">
+            <iframe class="w-full h-full" src="https://www.youtube.com/embed/E-8gvJlkY8c" title="Foods to Avoid in Menstruation" allowfullscreen></iframe>
+          </div>
+          <div class="p-2">
+            <h3 class="font-serif font-bold text-base text-[#3B2531]">Understanding Nutrition & Cycle Support</h3>
+            <p class="text-xs text-[#8A6575] mt-1">Dr. Hansaji Yogendra shares dietary principles for managing cramps and hormonal fluctuations.</p>
+          </div>
+        </div>
+
+        <div class="wc-card overflow-hidden shadow-lg p-3 bg-white">
+          <div class="aspect-video rounded-xl overflow-hidden bg-black mb-4">
+            <iframe class="w-full h-full" src="https://www.youtube.com/embed/Ucc1wKIOwnY" title="Feminine Hygiene Tips" allowfullscreen></iframe>
+          </div>
+          <div class="p-2">
+            <h3 class="font-serif font-bold text-base text-[#3B2531]">Feminine Hygiene & Comfort Routine</h3>
+            <p class="text-xs text-[#8A6575] mt-1">Practical hygiene guidance for everyday freshness and intimate comfort.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <!-- Site-Wide Comprehensive Footer (Managed by nav-footer.js) -->
+  <footer id="site-footer"></footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/icons.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/tracker-engine.js" defer></script>
+  <script src="assets/js/tracker-ui.js" defer></script>
+  <script src="assets/js/nav-footer.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
